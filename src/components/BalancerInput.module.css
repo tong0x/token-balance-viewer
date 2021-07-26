@@ -1,0 +1,100 @@
+.root {
+  height: 225px;
+}
+
+.search {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  width: 700px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  padding-left: 16px;
+}
+
+.input {
+  margin-left: 24px;
+  margin-right: 24px;
+  border: none;
+  width: 90%;
+  height: 70%;
+  font-size: 24px;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.input:focus {
+  outline: none;
+}
+
+.info {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 90vw;
+  overflow-wrap: break-word;
+  padding: 16px 8px;
+}
+
+.column {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  max-width: 90vw;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.row {
+  display: flex;
+  max-width: 90vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.error {
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  top: 60%;
+}
+
+@media (max-width: 600px) {
+  .input {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 960px) {
+  .search {
+    max-width: 90vw;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+}

@@ -1,0 +1,18 @@
+.dropdownItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+}
+.dropdownItem:hover {
+  background-color:#E0E0E0;
+}
+.selected {
+  background-color:#E0E0E0;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.7;
+}

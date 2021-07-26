@@ -1,0 +1,34 @@
+# Frontend Coding Challenge
+
+You have 10hrs to complete as much of this task as possible. We value quality over feature-completeness. It is fine to leave things aside provided you call them out in your project's README. The goal of this code sample is to help us identify what you consider production-ready code. You should consider this code ready for final review from a colleague, i.e. this would be the last step before deploying to production.
+
+Build an input component that displays the **ERC20 token balance** of a certain token for a given Ethereum address (ie. a user). The value of the input should be the Ethereum address of the user and the token address should be provided as a prop (all ERC20 tokens are represented as a smart contract deployed at a specific Ethereum address).
+
+It should have the following features:
+
+* It should allow the parent component to specify a **tokenAddress** for which the component will fetch a balance and display it to the user (who has inputted an Ethereum address into the input).
+* It should have a callback function that allows the component's parent to receive the inputted address.
+*  It should allow the user to input any arbitrary text into the input field and show them error messages in real-time if the input is an invalid Ethereum address.
+* ENS support
+    * Resolves a supplied ENS name to Ethereum address and displays it to the user.
+    * Displays an ENS name if the supplied address has been registered with an ENS name.
+
+
+Our stack is mostly TypeScript, and while we'd prefer you use it for this challenge (and doing so will enable you to use our tools and types), it's okay if you'd like to use ES6 or ES6+Flow; we won't count it against your submission. 
+
+We do, however, strongly prefer that you use:
+
+* React.js
+* ES6/ES7 features (e.g. Async/Await rather then promises/callbacks, etc...)
+
+Feel free to use the internet and all its wonders to build this component. No need to re-invent the wheel if a good one already exists.  We’re around if you have any high-level questions, as well; just shoot Zack an email!
+
+Lastly, we respectfully ask that you please do not post this challenge or your solution publicly.
+
+### The aspects of your code we will assess include:
+
+* **Component interface**: Does the component have a clear and properly scoped interface?
+* **UI design**: Does the component look presentable, does it have a clear hierarchy of information, and does it display the requisite information to the user so they can use this component effectively?
+* **Correctness**: Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
+* **Code quality**: Is the code simple, easy to understand, and maintainable? Are there any code smells or other red flags? Is the coding style consistent with the language's guidelines? Is it consistent throughout the codebase?
+* **Technical choices**: choices of libraries, dev tools, project setup, architecture etc. seem appropriate for the chosen task?
